@@ -24,6 +24,11 @@ Developed using Python 3.6 and the next python packages:
 The data set was download in the next link:
 https://www.kaggle.com/mishra5001/credit-card?select=application_data.csv
 
+![image](https://user-images.githubusercontent.com/88516507/140079922-68d7ea8a-3d05-4d83-8140-f2ebc7c508f6.png)
+Press the button download, for train the model you need:
+* application_data.csv
+* columns_description
+
 ## 2.Project Motivation
 
 This project is  requirement of the Udacity Data Science Nanodegree. The main idea of the project is to create a disaster response pipeline using supervised machine learning model that helps categorize different messages recived during natural disasters. The process consist taking two csv files that have real messages during a natural disasters, merge them and clean the data for export it to a sql database. With the final database we have to build a NLP pipeline for classificate the messages in 36 categories. The last step is build a flask app that have data vizualization and the classification model.
