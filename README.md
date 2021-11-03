@@ -43,7 +43,7 @@ The Capstone project allowed us to choose a topic of interest to show our skills
 
 ## 4. Results
 
-One of the project requirements is to provide a blog post. Click the next link: the following
+One of the project requirements is to provide a blog post. Click the next link: https://eortiz14.github.io/Project-4-Capstone/
 
 ## 5. Licensing, Authors, Acknowledgements
 This project was done by  Esteban Ortiz Gonzalez, an Industrial Engineer of the Pontificia Universidad Javeriana that currently work in Banco Davivienda.
