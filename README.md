@@ -29,24 +29,23 @@ Press the button download
 
 For train the model you need:
 * application_data.csv
-* columns_description
+* columns_description.csv
 
 ## 2.Project Motivation
 
-This project is  requirement of the Udacity Data Science Nanodegree. The main idea of the project is to create a disaster response pipeline using supervised machine learning model that helps categorize different messages recived during natural disasters. The process consist taking two csv files that have real messages during a natural disasters, merge them and clean the data for export it to a sql database. With the final database we have to build a NLP pipeline for classificate the messages in 36 categories. The last step is build a flask app that have data vizualization and the classification model.
+The Capstone project allowed us to choose a topic of interest to show our skills as Data Scientists, for this reason and since I am now working in a bank in the area of credit risk, I chose to build a credit card default model that seeks to grant a risk score for each customer. The methodology to be implemented will be a machine learning model that will have cross validation. Expectations are focused on obtaining insights that help financial banking to build effective credit scores. 
 
 ## 3. Instructions
 
-The repository contains:
+1. Download the database
+2. Install Package (Using Pip Install or Anaconda Prompt)
+3. Execute the Jupyther Notebook Project 4_Capstone Credit Risk.ipynb
 
-* The data folder contains two csv files, process_data.py and a Jupyter Notebook that contains the similar code that process_data.py
-* The models folder contains train_classifier.py, which builds and trains the model that will categorize messages
-* The app folder contains run.py which is used to deploy the flask app
+## 4. Results
 
-For deploy the flask app running make sure to be in the app directory use cd app in the terminal. Open a new terminal window and type in the command line: 'python run.py', then 
-open another Terminal Window and type env|grep WORK, the result of this command put on a new web browser window, type in the following: https://SPACEID-3001.SPACEDOMAIN.
+One of the project requirements is to provide a blog post. Click the next link: the following
 
-## 4. Licensing, Authors, Acknowledgements
+## 5. Licensing, Authors, Acknowledgements
 This project was done by  Esteban Ortiz Gonzalez, an Industrial Engineer of the Pontificia Universidad Javeriana that currently work in Banco Davivienda.
 Special acknowledgments to Udacity and Kaggle for the database.
 
