@@ -48,5 +48,5 @@ open another Terminal Window and type env|grep WORK, the result of this command 
 
 ## 4. Licensing, Authors, Acknowledgements
 This project was done by  Esteban Ortiz Gonzalez, an Industrial Engineer of the Pontificia Universidad Javeriana that currently work in Banco Davivienda.
-Special acknowledgments to Udacity and Figure Eight for disaster data.
+Special acknowledgments to Udacity and Kaggle for the database.
 
