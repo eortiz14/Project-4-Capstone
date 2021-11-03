@@ -1,6 +1,6 @@
 ## Credit Risk and Machine Learning
 
-You can use the [editor on GitHub](https://github.com/eortiz14/Project-4-Capstone/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Try to predict the default probability in people who wants a new financial product is not a new problem
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
