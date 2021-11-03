@@ -26,6 +26,7 @@ https://www.kaggle.com/mishra5001/credit-card?select=application_data.csv
 
 ![image](https://user-images.githubusercontent.com/88516507/140079922-68d7ea8a-3d05-4d83-8140-f2ebc7c508f6.png)
 Press the button download
+
 For train the model you need:
 * application_data.csv
 * columns_description
