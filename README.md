@@ -21,6 +21,8 @@ Developed using Python 3.6 and the next python packages:
 * xgboost 1.4.2
 * yellowbrick 1.3 post1
 
+The data set was download in the next link:
+https://www.kaggle.com/mishra5001/credit-card?select=application_data.csv
 
 ## 2.Project Motivation
 
@@ -40,4 +42,4 @@ open another Terminal Window and type env|grep WORK, the result of this command 
 ## 4. Licensing, Authors, Acknowledgements
 This project was done by  Esteban Ortiz Gonzalez, an Industrial Engineer of the Pontificia Universidad Javeriana that currently work in Banco Davivienda.
 Special acknowledgments to Udacity and Figure Eight for disaster data.
-https://www.kaggle.com/mishra5001/credit-card?select=application_data.csv
+
