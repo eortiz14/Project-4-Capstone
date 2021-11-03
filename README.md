@@ -38,7 +38,7 @@ The Capstone project allowed us to choose a topic of interest to show our skills
 ## 3. Instructions
 
 1. Download the database
-2. Install Package (Using Pip Install or Anaconda Prompt)
+2. Install Packages (Using Pip Install or Anaconda Prompt)
 3. Execute the Jupyther Notebook Project 4_Capstone Credit Risk.ipynb
 
 ## 4. Results
