@@ -60,18 +60,20 @@ numerical_features = numerical_features+X.select_dtypes("float64").columns.to_li
 # create the steps for the categorical pipeline
 categorical_steps = [
     ('cat_selector', FeatureSelector(categorical_features)),
-    #('cat_transformer', CategoricalTransformer()),
-    ('encoder',One_Hot_Encoder)#OneHotEncoder,CategoricalTransformer
+    ('encoder',One_Hot_Encoder)
 ]
 # create the steps for the numerical pipeline
 numerical_steps = [
     ('num_selector', FeatureSelector(numerical_features)),
-    ('std_scaler', StandardScaler()),#StandardScaler() ,RobustScaler()
+    ('std_scaler', StandardScaler()),
 ]
 # create the 2 pipelines with the respective steps
 categorical_pipeline = Pipeline(categorical_steps)
 numerical_pipeline = Pipeline(numerical_steps)
 ```
+The code above let us preprocess numerical features with Standard Scaler and categorical features with One Hot Enconder that inside have 'sparse = False' that help us to drop a one level if the feature have only 2.
+
+Also we must split the database in training base and test base, 70& and 30% respectively.
 
 ### XG-Boost
 For the modeling process we are gonna use the Extreme Gradient Boost Classifier (XG-Boost). This model use ensembles that are constructed from decision tree models. Trees are added one at a time to the ensemble and fit to correct the prediction errors made by prior models. This is a type of ensemble machine learning model referred to as boosting.
@@ -79,7 +81,13 @@ For the modeling process we are gonna use the Extreme Gradient Boost Classifier 
 Models are fit using any arbitrary differentiable loss function and gradient descent optimization algorithm. This gives the technique its name, “gradient boosting,” as the loss gradient is minimized as the model is fit, much like a neural network.
 
 The model have the option to tunning hyperparameter. In this case we will tune this:
-  ![image](https://user-images.githubusercontent.com/88516507/140250463-916e9a30-6c56-4a11-a7d5-5b6aff16125f.png)
+             ![image](https://user-images.githubusercontent.com/88516507/140250463-916e9a30-6c56-4a11-a7d5-5b6aff16125f.png)
+
+In the following graph we can see the results of the algorithm
+
+
+
+
 
 
 
