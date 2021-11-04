@@ -26,7 +26,8 @@ Now we can deal with numerical and categorical features more faster.
 The database after the first cleanup has 45 categorical features, ploting each feature we see the next behavior in some features:
 ![image](https://user-images.githubusercontent.com/88516507/140244992-5fbb281c-ade6-4854-a06f-00d0ef65df8c.png)
 
-As we can see, although some features don't have missing value but the distribution of levels are unfuncional. We drop the categorical features with this levels distribution.
+As we can see, although some features don't have missing value but the distribution of levels are unfuncional so we drop the categorical features with this levels distribution. 
+We also find some attributes that are not related to the purpose of the model such as the variable 'WEEKDAY_APPR_PROCESS_START' that indicates on which day of the week did the client apply for the loan, features unrelated to the purpose of the model were also removed. At the end of this process we still have 14 categorical features.
 
 ```markdown
 Syntax highlighted code block
