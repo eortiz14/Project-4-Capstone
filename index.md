@@ -105,3 +105,9 @@ In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Spli
 
 
 From the above pictures we can observe that first 8 features have the power of the prediction. EXT_SOURCE_2,EXT_SOURCE_3 and amounts of debt balances are on the top which makes a lot of sense following the logic of the financial industry and the approval of new credit products. 
+
+Using SHAP package we undestand with more detail the logic of each feature and how its affect the prediction. Lets see the following plot
+
+![image](https://user-images.githubusercontent.com/88516507/140254313-9cd4e865-5d04-48de-8350-def874189faa.png)
+
+
