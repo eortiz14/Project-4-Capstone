@@ -4,7 +4,8 @@
     1.Requirements
     2.Project Motivation
     3.Instructions
-    4.Licensing, Authors, and Acknowledgements
+    4.Blog
+    5.Licensing, Authors, and Acknowledgements
 
 ## 1.Requirements
 
