@@ -19,7 +19,14 @@ This description table show us 2 things, the firt one is that we have categorica
 Trying to optimize the process of data analysis/data preparation in firt we will drop the features that have mora than 50% of missing values. In this process we drop 41 features, the next table shows some features with more than 50% missing values.
 ![image](https://user-images.githubusercontent.com/88516507/140239190-97f350bf-0a3e-4f90-b0a3-d8eb6a55b546.png)
 
+Now we can deal with numerical and categorical features more faster. 
 
+#### Categorical Features
+
+The database after the first cleanup has 45 categorical features, ploting each feature we see the next behavior in some features:
+![image](https://user-images.githubusercontent.com/88516507/140244992-5fbb281c-ade6-4854-a06f-00d0ef65df8c.png)
+
+As we can see, although some features don't have missing value but the distribution of levels are unfuncional. We drop the categorical features with this levels distribution.
 
 ```markdown
 Syntax highlighted code block
