@@ -50,6 +50,29 @@ At the end of the data preparation we obtain 34 features and 245891 sku_id(rows)
 
 Now we have the definitive database but is not ready to put into the model. Build pipelines for the data will help us to get it ready.  
 
+```markdown
+# get the categorical feature names
+categorical_features = X.select_dtypes("object").columns.to_list()
+# get the numerical feature names
+numerical_features = X.select_dtypes("int64").columns.to_list()
+numerical_features = numerical_features+X.select_dtypes("float64").columns.to_list()
+
+# create the steps for the categorical pipeline
+categorical_steps = [
+    ('cat_selector', FeatureSelector(categorical_features)),
+    #('cat_transformer', CategoricalTransformer()),
+    ('encoder',One_Hot_Encoder)#OneHotEncoder,CategoricalTransformer
+]
+# create the steps for the numerical pipeline
+numerical_steps = [
+    ('num_selector', FeatureSelector(numerical_features)),
+    ('std_scaler', StandardScaler()),#StandardScaler() ,RobustScaler()
+]
+# create the 2 pipelines with the respective steps
+categorical_pipeline = Pipeline(categorical_steps)
+numerical_pipeline = Pipeline(numerical_steps)
+```
+
 ### XG-Boost
 For the modeling process we are gonna use the Extreme Gradient Boost Classifier (XG-Boost). This model use ensembles that are constructed from decision tree models. Trees are added one at a time to the ensemble and fit to correct the prediction errors made by prior models. This is a type of ensemble machine learning model referred to as boosting.
 
