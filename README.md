@@ -41,7 +41,7 @@ The Capstone project allowed us to choose a topic of interest to show our skills
 2. Install Packages (Using Pip Install or Anaconda Prompt)
 3. Execute the Jupyther Notebook Project 4_Capstone Credit Risk.ipynb
 
-## 4. Results
+## 4. Blog
 
 One of the project requirements is to provide a blog post. Click the next link: https://eortiz14.github.io/Project-4-Capstone/
 
