@@ -104,4 +104,4 @@ In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Spli
 ![image](https://user-images.githubusercontent.com/88516507/140253402-83133e78-1bc1-43b4-b62e-ac04c30775ea.png)
 
 
-
+From the above pictures we can observe that first 8 features have the power of the prediction. EXT_SOURCE_2,EXT_SOURCE_3 and amounts of debt balances are on the top which makes a lot of sense following the logic of the financial industry and the approval of new credit products. 
