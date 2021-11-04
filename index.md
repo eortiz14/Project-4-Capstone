@@ -104,10 +104,10 @@ In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Spli
 ![image](https://user-images.githubusercontent.com/88516507/140253402-83133e78-1bc1-43b4-b62e-ac04c30775ea.png)
 
 
-From the above pictures we can observe that first 8 features have the power of the prediction. EXT_SOURCE_2,EXT_SOURCE_3 and amounts of debt balances are on the top which makes a lot of sense following the logic of the financial industry and the approval of new credit products. 
+From the above pictures we can observe that first 8 features have the power of the prediction. EXT_SOURCE_2,EXT_SOURCE_3 and amounts of debt balances are on the top which makes a lot of sense following the logic of the financial industry and the approval of new credit products. EXT_SOURCE_2 and EXT_SOURCE_3 are tow differents normalized score from external data source.  Also we see in the middle barplot something interesting, the feature 'NAME_EDUCATION_TYPE' is the highest education the client achieved and the levels 'Secondary / secondary special' and  'Higher education' are helping the trees to split their branches.
 
 Using SHAP package we undestand with more detail the logic of each feature and how its affect the prediction. Lets see the following plot
 
 ![image](https://user-images.githubusercontent.com/88516507/140254313-9cd4e865-5d04-48de-8350-def874189faa.png)
 
-
+As we can see, the graph of the shap values is easy to read. The SHAP values are a transformation of the values that we give to the model and indicate us when the variable is in blue color that this range decreases the prediction of the probability that the client will have difficulties to pay in the future. On the other hand, when the variable is in the pink color, its default probability prediction begins to increase.
