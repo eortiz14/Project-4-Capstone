@@ -29,6 +29,18 @@ The database after the first cleanup has 45 categorical features, ploting each f
 As we can see, although some features don't have missing value but the distribution of levels are unfuncional so we drop the categorical features with this levels distribution. 
 We also find some attributes that are not related to the purpose of the model such as the variable 'WEEKDAY_APPR_PROCESS_START' that indicates on which day of the week did the client apply for the loan, features unrelated to the purpose of the model were also removed. At the end of this process we still have 14 categorical features.
 
+#### Numerical Features
+
+At beginning of this step in data preparatarion we have 34 numerical features.In firt place we start looking the percentage of nan values in columns and we found this:
+
+![image](https://user-images.githubusercontent.com/88516507/140248058-b3a367f8-31c5-468a-a809-3839d9cde60a.png)
+As we can see, some features have a high percentage and others a low percentage. For the high percentage features we drop the column and for the others we will eliminate the rows or impute values. After drop columns, drop rows and impute values we finish with 23 numerical features. At this point we only need to do a correlation analysis of variables to make sure that we do not have 2 or more variables that behave the same, looking the next plot we se high correlation between some features so we drop one of them.
+
+![image](https://user-images.githubusercontent.com/88516507/140249065-92d0ccc2-398c-4e9b-b0dc-ce5740265726.png)
+
+
+
+
 ```markdown
 Syntax highlighted code block
 
