@@ -93,29 +93,15 @@ We are getting a AUC=0.75, the academic articles say that if an AUC is above 0.7
 
 As we said at the top of the article, in the financial industry they prefer not to use this type of machine learning model because they think that their interpretability is complex. With the help of the 'plot.importance' function and the SHAP package we will show that this is not the case.
 
-In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Split Mean Gain' and  'Sample Coverage'
+In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Split Mean Gain' and  'Sample Coverage'. The meaning of each one are:
+
+* Feature Weight: The weight of each feature in the model
+
+* Split Mean Gain: Implies the relative contribution of the corresponding characteristic to the model calculated by taking the contribution of each characteristic for each tree in the model. A higher value for this metric compared to another characteristic means that it is more important for generating a prediction.
+
+* Sample Coverage: Means the relative number of observations related to this characteristic.
+
+![image](https://user-images.githubusercontent.com/88516507/140253402-83133e78-1bc1-43b4-b62e-ac04c30775ea.png)
 
 
 
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
