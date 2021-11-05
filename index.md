@@ -94,14 +94,30 @@ Models are fit using any arbitrary differentiable loss function and gradient des
 The model have the option to tunning hyperparameter. In this case we will tune this:
              ![image](https://user-images.githubusercontent.com/88516507/140250463-916e9a30-6c56-4a11-a7d5-5b6aff16125f.png)
 
+### Refinement
+
+To improve the algorithm, we use cross-validation for training. We divide into 10 pleats, to help avoid overfitting. We also adjust the hyperparameters according to the table shown above.
+
+```markdown
+param_grid = {
+    "learning_rate": [0.1, 0.01],
+    "colsample_bytree": [0.6, 0.8],
+    "subsample": [0.6, 0.8],
+    "max_depth": [2, 4, 6],
+    "n_estimators": [100, 200, 300],
+    "reg_lambda": [1, 1.5, 2],
+    "gamma": [0, 0.1, 0.3],
+}
+```
+The algorithm select the hyperparameters that optimize the evaluation metrics "error" and "auc".
+
+## Results
+
 In the following graph we can see the results of the algorithm:
 
 ![image](https://user-images.githubusercontent.com/88516507/140252406-0d25effe-f6e6-4bca-a589-15d92fe952ca.png)
 
 We are getting a AUC=0.75, the academic articles say that if an AUC is above 0.7 the model is okay.
-
-## Results
-
 As we said at the top of the article, in the financial industry they prefer not to use this type of machine learning model because they think that their interpretability is complex. With the help of the 'plot.importance' function and the SHAP package we will show that this is not the case.
 
 In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Split Mean Gain' and  'Sample Coverage'. The meaning of each one are:
