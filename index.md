@@ -148,3 +148,6 @@ As we can see, these "black box" machine learning models work quite well in the 
 
 ### Improvement
 
+Looking back, we built a great model, but maybe we missed 2 specific topics.This are the gender distribution in the database and the possible option of using fewer variables without significantly affecting the performance of the model. 
+
+The distribution by gender in the training set was 66.5% (114,485 rows) for female and 33.5% (57,638 rows) for male. The feature at model is named 'CODE_GENDER_M' is a dummy feature takes the value of 1 when the gender is male and 0 when is female,We can see in the SHAP VALUES graph when the model sees that the customer is MAN (1) its prediction of credit default increases. Based on this, perhaps we built a model that would discriminate against men applying for a credit card in the future and this could be a legal problem for the bank. To solve this we see to options in the future, drop the gender feature or use a stratified sampling technique by gender to be sure that if there is a difference between genders when paying their financial duties.
