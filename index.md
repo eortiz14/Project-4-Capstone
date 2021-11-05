@@ -118,6 +118,7 @@ In the following graph we can see the results of the algorithm:
 ![image](https://user-images.githubusercontent.com/88516507/140252406-0d25effe-f6e6-4bca-a589-15d92fe952ca.png)
 
 We are getting a AUC=0.75, the academic articles say that if an AUC is above 0.7 the model is okay.
+
 As we said at the top of the article, in the financial industry they prefer not to use this type of machine learning model because they think that their interpretability is complex. With the help of the 'plot.importance' function and the SHAP package we will show that this is not the case.
 
 In first place we can use 'plot.importance' for plot the 'Feature Weight', 'Split Mean Gain' and  'Sample Coverage'. The meaning of each one are:
@@ -138,3 +139,7 @@ Using SHAP package we undestand with more detail the logic of each feature and h
 ![image](https://user-images.githubusercontent.com/88516507/140254313-9cd4e865-5d04-48de-8350-def874189faa.png)
 
 As we can see, the graph of the shap values is easy to read. The SHAP values are a transformation of the values that we give to the model and indicate us when the variable is in blue color that this range decreases the prediction of the probability that the client will have difficulties to pay in the future. On the other hand, when the variable is in the pink color, its default probability prediction begins to increase.
+
+## Conclusion
+
+As we can see, these "black box" machine learning models work quite well in the financial industry. We can explain the behavior of all characteristics by analyzing the data before modeling and using plot importance and the shap values after modeling.It is very important when we are going to build a credit risk model that the information of each client is always certified by data mining teams because if we use incorrect information in the training database can have good metrics in the results of the model but when it is implemented, it is possible that we start to see real negative results that will materialize as money losses for the bank.
