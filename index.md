@@ -18,7 +18,7 @@ With the database that we obtained from kaggle at first glance we can see 121 po
 The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve. We expect obtain an AUC over 0.7
 
 
-## Getting close to the database
+## Analysis
 
 For this project we are going to use a credit card defaultees database. The target feature is: client with payment difficulties he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample. Also the database contains 121 atributes(columns) with sociodemographic and credit information data.
 
@@ -55,9 +55,9 @@ As we can see, some features have a high percentage and others a low percentage.
 
 At the end of the data preparation we obtain 34 features and 245891 sku_id(rows).
 
-## Let's start the modeling process
+## Methodology
 
-### Preprocess the data with pipelines
+### Data Preprocessing
 
 Now we have the definitive database but is not ready to put into the model. Build pipelines for the data will help us to get it ready.  
 
@@ -86,7 +86,7 @@ The code above let us preprocess numerical features with Standard Scaler and cat
 
 Also we must split the database in training base and test base, 70& and 30% respectively.
 
-### XG-Boost
+### Implementation XG-Boost
 For the modeling process we are gonna use the Extreme Gradient Boost Classifier (XG-Boost). This model use ensembles that are constructed from decision tree models. Trees are added one at a time to the ensemble and fit to correct the prediction errors made by prior models. This is a type of ensemble machine learning model referred to as boosting.
 
 Models are fit using any arbitrary differentiable loss function and gradient descent optimization algorithm. This gives the technique its name, “gradient boosting,” as the loss gradient is minimized as the model is fit, much like a neural network.
@@ -100,7 +100,7 @@ In the following graph we can see the results of the algorithm:
 
 We are getting a AUC=0.75, the academic articles say that if an AUC is above 0.7 the model is okay.
 
-## Opening the black box
+## Results
 
 As we said at the top of the article, in the financial industry they prefer not to use this type of machine learning model because they think that their interpretability is complex. With the help of the 'plot.importance' function and the SHAP package we will show that this is not the case.
 
