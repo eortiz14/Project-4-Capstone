@@ -15,7 +15,7 @@ With the database that we obtained from kaggle at first glance we can see 121 po
 
 ## Metrics
 
-The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve beacuse for this classifation problem  is powerful varying between 0.75 and 0.80
+The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve. We expect obtain an AUC over 0.7
 
 
 ## Getting close to the database
