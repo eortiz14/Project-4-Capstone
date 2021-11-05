@@ -142,4 +142,9 @@ As we can see, the graph of the shap values is easy to read. The SHAP values are
 
 ## Conclusion
 
+### Reflection
+
 As we can see, these "black box" machine learning models work quite well in the financial industry. We can explain the behavior of all characteristics by analyzing the data before modeling and using plot importance and the shap values after modeling.It is very important when we are going to build a credit risk model that the information of each client is always certified by data mining teams because if we use incorrect information in the training database can have good metrics in the results of the model but when it is implemented, it is possible that we start to see real negative results that will materialize as money losses for the bank.
+
+### Improvement
+
