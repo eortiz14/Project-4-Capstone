@@ -15,7 +15,7 @@ With the database that we obtained from kaggle at first glance we can see 121 po
 
 ## Metrics
 
-The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve. We expect obtain an AUC over 0.7
+In data science for the  classification problems we have available different metrics that could be used depending on the objective of the model. For example precision and recall metrics thats works well in the health industry where a classification error can cost someone their life and having these metrics calibrated is important. On the other hand we have the AUC ROC,this metrics is the measure of the ability of a classifier to distinguish between classes, indicates how well the probabilities from the positive classes(credit default in this case) are separated from the negative classes(non credit default).The metrics that we will use is the AUC and we expect obtain an AUC over 0.7
 
 
 ## Analysis
@@ -139,6 +139,9 @@ Using SHAP package we undestand with more detail the logic of each feature and h
 ![image](https://user-images.githubusercontent.com/88516507/140254313-9cd4e865-5d04-48de-8350-def874189faa.png)
 
 As we can see, the graph of the shap values is easy to read. The SHAP values are a transformation of the values that we give to the model and indicate us when the variable is in blue color that this range decreases the prediction of the probability that the client will have difficulties to pay in the future. On the other hand, when the variable is in the pink color, its default probability prediction begins to increase.
+
+### Justification
+Los resultados finales se discuten en detalle. Explique la exploración de por qué algunas técnicas funcionaron mejor que otras, o cómo se documentaron las mejoras.
 
 ## Conclusion
 
