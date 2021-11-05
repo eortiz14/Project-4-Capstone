@@ -22,7 +22,7 @@ The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ab
 
 For this project we are going to use a credit card defaultees database. The target feature is: client with payment difficulties he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample. Also the database contains 121 atributes(columns) with sociodemographic and credit information data.
 
-At first look for the dataset we see the next table that give us a preliminary description 
+At first look for the dataset we see the next table that give us a preliminary description. In this step we are going to accomplish the Data Exploration and Data Visualization requirements.
 
 ![image](https://user-images.githubusercontent.com/88516507/140238277-708d7aa8-d4ce-4f8f-85c8-fff672e0b723.png)
 
