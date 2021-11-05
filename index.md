@@ -1,11 +1,22 @@
 # Credit Risk and Machine Learning
+## Project Overview
 
-## Actual context
+The project is based on credit card default model that seeks to grant a risk score for each customer. The methodology to be implemented will be classification model and a  cross validation technique. Expectations are focused on obtaining insights that help financial banking to build effective credit scores replacing . 
+ 
+Most banks use traditional classification models like logistic model for credit scores because they find them easier to understand than newer machine learning models that have sophisticated algorithms and hypermeters. Trying to change this paradigm i will use a model considered a black box such as the XGBOOST for credit card defaultees, the objetive is get good metrics and show the interpretability of features(atributes) used to modelling. 
+
+## Problem Statement
+
 Try to predict the default probability in people who wants a new financial product is not a new problem. Banks have always looked for a way to correctly identify those clients who, after the approval and disbursement of the credit, fall into credit default. The credit default happens when a client who have an active credit start not paying  to the point that the bank is forced to lose the loan money and reports the client in the credit bureaus. This situation results unfavorable to the banks in many ways because when the clients dont pay they lose money.
 
 Thats the importance to build robusts models that estimate the probability of credit default in people, the global target for the credit risk model is try to identify those clients whose current features have a high probability of not paying in the future. The features are information that the bank have of every client like monthly income, age, gender, for example. This information is used to build credit risk models and nowdays data mining can collect all the information from social networks, demographic, social and financial the models have better inputs to improve their predictive power.
 
-Most banks use traditional classification models like logit for credit scores because they find them easier to understand than newer machine learning models that have sophisticated algorithms and hypermeters. Trying to change this paradigm i will use a model considered a black box such as the XGBOOST for credit card defaultees, the objetive is get good metrics and show the interpretability of features(atributes) used to modelling. 
+With the database that we obtained from kaggle at first glance we can see 121 possible predictor variables and the target variable which is those clients with payment difficulties had late payment more than X days on at least one of the first Y installments of the loan in our sample. Applying a part of the CRISP-DM methodoly we are going to understand the data, prepare the data, modeling with the prepare data and finally, evaluate the model. We hope to perform well in the machine learning model.
+
+## Metrics
+
+The metrics that we will use are AUC and ROC CURVE. AUC is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve beacuse for this classifation problem  is powerful varying between 0.75 and 0.80
+
 
 ## Getting close to the database
 
