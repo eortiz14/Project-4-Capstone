@@ -111,6 +111,10 @@ param_grid = {
 ```
 The algorithm select the hyperparameters that optimize the evaluation metrics "error" and "auc".
 
+![image](https://user-images.githubusercontent.com/88516507/140590999-a201aa4d-2772-4f18-92b5-b73847881b89.png)
+
+
+
 ## Results
 
 In the following graph we can see the results of the algorithm:
