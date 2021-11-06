@@ -113,7 +113,7 @@ The algorithm select the hyperparameters that optimize the evaluation metrics "e
 
 ![image](https://user-images.githubusercontent.com/88516507/140591140-12665e73-c465-44c3-92ce-ab21311385e0.png)
 
-The refinement of the model happens when the algorithm select between the pull of values that we put on each hyperparemeter, those that help to increase the AUC and reduce the error.In the image above we can see a clear example of how the algorithm works. For the hyperparameter 'colsample_bytree' we put the values of [0.6, 0.8] and the algorithm found within its internal optimization processes that using the value of 0.6 is better than 0.8.
+The refinement of the model happens when the algorithm select between the pull of values that we put on each hyperparemeter, those that help to increase the AUC and reduce the error. In the image above we can see a clear example of how the algorithm works. For the hyperparameter 'colsample_bytree' we put the values of [0.6, 0.8] and the algorithm found within its internal optimization processes that using the value of 0.6 is better than 0.8. The same happens with each hyperparameter.
 
 
 ## Results
