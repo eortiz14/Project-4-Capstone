@@ -146,7 +146,10 @@ Using SHAP package we undestand with more detail the logic of each feature and h
 As we can see, the graph of the shap values is easy to read. The SHAP values are a transformation of the values that we give to the model and indicate us when the variable is in blue color that this range decreases the prediction of the probability that the client will have difficulties to pay in the future. On the other hand, when the variable is in the pink color, its default probability prediction begins to increase.
 
 ### Justification
-Los resultados finales se discuten en detalle. Explique la exploración de por qué algunas técnicas funcionaron mejor que otras, o cómo se documentaron las mejoras.
+
+The results that we obtain are formidable by two reasons. First, by the nature of the XG-Boost model we guarantee XGBoost minimizes a regularized objective function (L1 and L2) that incorporates a convex loss function and a penalty term for model complexity. To make the final prediction, the training continues iteratively, inserting new trees that predict errors from previous trees that are then combined with previous trees. This is the reason why this model has become so popular and has won so many challenge contests.
+
+The second reason is that during the process we explained in the refinement chapter, we did not use the default hyperparameters and gave the algorithm the option to select the best hyperparameters. 
 
 ## Conclusion
 
